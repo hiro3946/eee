@@ -401,7 +401,8 @@ are always included."
       '((sequence "TODO(t)" "STARTED(s)" "WAITING(w)"  "SOMEDAY(d)" "|" "DONE(x)" "CANCEL(c)")
 	(sequence "APPT(a)" "|" "DONE(x)" "CANCEL(c)")))
 ;; ORG-Remember mode in ORG-MODE
-(setq org-startup-truncated nil)
+;;(setq org-startup-truncated nil)
+(setq org-startup-truncated t)
 (setq org-return-follows-link t)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (org-remember-insinuate)
